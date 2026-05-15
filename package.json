@@ -1,0 +1,36 @@
+{
+  "name": "yocale_automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "test:all": "playwright test --workers=4",
+    "test:tag-ui": "playwright test --grep @UI ",
+    "test:tag-api": "playwright test --grep @API ",
+    "test:tag-p1": "playwright test --grep @P1 ",
+    "test:tag-p2": "playwright test --grep @P2 ",
+    "test:tag-p3": "playwright test --grep @P3 ",
+    "test:ui-p1": "playwright test --grep @UI.*@P1 ",
+    "test:api-p1": "playwright test --grep @API.*@P1 ",
+    "test:chrome": "playwright test --project=chromium ",
+    "test:firefox": "playwright test --project=firefox ",
+    "test:webkit": "playwright test --project=webkit ",
+    "test:serial": "playwright test --workers=1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.8.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "dotenv": "^17.4.2",
+    "faker": "^6.6.6"
+  }
+}

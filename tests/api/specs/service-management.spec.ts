@@ -10,8 +10,8 @@ test.describe("Service Management - API", () => {
     baseURL = "https://yocale-test.staging.com";
 
     // Login as tenant admin to get auth token
-    const adminEmail = process.env.ADMIN_EMAIL || "admin@test.com";
-    const adminPassword = process.env.ADMIN_PASSWORD || "password123";
+    const adminEmail = process.env.VALID_ADMIN_EMAIL;
+    const adminPassword = process.env.VALID_ADMIN_PASSWORD;
 
     const loginResponse = await request.post(`${baseURL}/api/v1/auth/login`, {
       headers: { "Content-Type": "application/json" },
